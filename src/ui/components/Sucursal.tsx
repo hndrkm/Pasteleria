@@ -1,13 +1,13 @@
 import Image from "next/image"
 
 export function Sucursal(
-  props: { titulo_sucursal: string, img: string, src_map: string, titulo_descripcion: string, descripcion: string }) {
+  props: { title: string, src_img: string, src_map: string, description_title: string, description_text: string }) {
   return (
 
     <div className="flex flex-col py-10">
       <div className="shadow-lg hover:shadow-lg hover:shadow-primary group duration-700 hover:scale-105  ">
 
-        <h2 className="text-2xl font-bold tracking-tight text-text-primary py-10">{props.titulo_sucursal}</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-text-primary py-10">{props.title}</h2>
 
         <div className="w-full  mb-4 bg-background  ">
           <div className="flex items-center bg-white ">
@@ -15,7 +15,7 @@ export function Sucursal(
             <div className="relative flex flex-row justify-center  items-center w-3/6 h-96 m-5">
               <Image
                 className=""
-                src={props.img}
+                src={props.src_img}
                 fill={true}
                 quality={100}
                 alt="Picture of the author"
@@ -42,8 +42,8 @@ export function Sucursal(
 
         <div className="p-10 flex items-center justify-center ">
           <div className="text-left">
-            <h2 className="text-3xl mb-4 font-semibold text-text-primary py-8">{props.titulo_descripcion}</h2>
-            <p className="text-gray-700 pb-8">{props.descripcion}</p>
+            <h2 className="text-3xl mb-4 font-semibold text-text-primary py-8">{props.description_title}</h2>
+            <p className="text-gray-700 pb-8">{props.description_text}</p>
           </div>
         </div>
 
