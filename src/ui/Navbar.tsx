@@ -30,8 +30,8 @@ const navigation =
   ]
 export const Navbar: FC<Props> = ({ locale }) => {
   return (
-    <header className="fixed z-30 w-full bg-white/60">
-      <div className="mx-auto flex flex-row items-center justify-around backdrop-blur-sm">
+    <header className="fixed z-30 w-full bg-white/70">
+      <div className="mx-auto flex flex-row justify-center backdrop-blur-sm">
         <div className="flex items-center justify-end py-2 hover:translate-y-[5px] transition duration-300 ease-in-out">
           <Image
             src="/Plogot2.png"
@@ -41,8 +41,9 @@ export const Navbar: FC<Props> = ({ locale }) => {
           />
         </div>
 
-        <div className=" py-8">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
+        <div className=" p-8">
+          <ul className="font-medium flex flex-row px-4 
+           mt-4 border-x border-primary ">
             {navigation.map((item) =>
               <li key={item.name}>
                 <NavItem  name={item.name} href={item.href}></NavItem>

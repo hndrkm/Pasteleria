@@ -4,7 +4,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 export default function Footer() {
   return (
     <footer>
-      <section className="flex justify-center py-4">
+      <section className="flex justify-center py-4 border-t-2 border-primary border-dashed">
         <div className="flex flex-col justify-center p-8">
           <h1 className="text-2xl font-bold mb-4 text-text-primary">Pastelería Alarcón </h1>
           <div className="text-text-secondary font-semibold px-10 max-w-md">

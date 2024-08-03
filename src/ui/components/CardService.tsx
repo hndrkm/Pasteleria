@@ -9,7 +9,6 @@ export function CardService (props:{name:string,img:string})
               src={props.img}
               fill={true}
               quality={100}
-              objectFit="cover"
               alt="Picture of the author"
             />
             <div className="items-center justify-center absolute group-hover:block opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">

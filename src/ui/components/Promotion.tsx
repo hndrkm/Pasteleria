@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export function Promotion() {
     return (
-        <div className="max-w-min p-4">
-            <div className="max-w-min bg-background border rounded-lg shadow hover:shadow-lg hover:shadow-primary group">
+        <div className="max-w-max p-4">
+            <div className="max-w-min bg-background border rounded-lg shadow-lg hover:shadow-lg hover:shadow-button-hover group">
                 <div className="relative h-72 w-96 flex justify-center">
                     <Image
-                        className="rounded-2xl"
+                        className="rounded-lg"
                         src="/PasteleriaA1.jpg"
-                        layout="fill"
+                        fill={true}
                         quality={100}
                         alt="Picture of the author"
                     />

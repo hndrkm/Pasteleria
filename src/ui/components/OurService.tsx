@@ -3,7 +3,7 @@ import { TService } from "@/types";
 
 export default function OurService(props:TService){
   return(
-    <div className="flex my-6 shadow hover:shadow-lg hover:shadow-primary group duration-700 hover:scale-105 ">
+    <div className="flex my-6 max-w-4xl shadow hover:shadow-lg group duration-700 hover:scale-105 ">
       
       <div className="w-1/3 p-4 flex justify-center items-center">
       
@@ -13,7 +13,6 @@ export default function OurService(props:TService){
             src={props.src_img}
             fill={true}
             quality={100}
-            objectFit="cover"
             alt="Picture of the author"
           />
         </div>

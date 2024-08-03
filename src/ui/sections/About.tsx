@@ -3,29 +3,33 @@ import Image from "next/image";
 export default function About()
 {
   return(
-    <div className="w-5/6 mx-auto text-center ">
-      <h2 className="text-5xl font-bold tracking-tight text-text-primary pb-10">NOSOTROS</h2>
-      <div className="flex flex-col">
-        <div className="w-full flex items-center bg-white my-4 bg-background  rounded-lg shadow hover:shadow-lg hover:shadow-primary group duration-700 hover:scale-105 ">
+    <section className="container mx-auto text-center p-2">
+      <h2 className="text-5xl font-bold tracking-tight text-text-primary py-10">NOSOTROS</h2>
+      <div className="flex flex-col p-4">
+        <div className="w-full flex items-center bg-white my-4 bg-background rounded-lg shadow 
+        hover:shadow-lg group duration-700">
 
             <div className="relative flex flex-row justify-center rounded-full items-center w-3/6 h-96 ">
               <Image
                 className="rounded-l-lg"
-                src="/PasteleriaA1.jpg"
+                src="/pasteleria.jpg"
                 fill={true}
                 quality={100}
                 objectFit="cover"
                 alt="Picture of the author"
               />
             </div>
-
             <div className="flex-1 pl-6 px-6">
-              <h2 className="text-3xl mb-4 font-semibold text-text-primary ">Pasteles para Cada Ocasión</h2>
-              <p className="text-gray-700">Descubre nuestra exquisita selección de pasteles, perfectos para cualquier celebración o para darte un gusto personal. Desde clásicos pasteles de chocolate y vainilla hasta creaciones innovadoras como tarta de limón con merengue y pastel de red velvet, cada uno de nuestros productos está hecho con ingredientes de alta calidad y una atención meticulosa a los detalles. Ya sea que estés buscando el pastel perfecto para un cumpleaños, una boda o simplemente una merienda especial, nuestro surtido promete endulzar tu día con sabores irresistibles y presentaciones elegantes. ¡Haz tu pedido hoy y déjate llevar por el sabor!</p>
+              <h2 className="text-3xl mb-4 font-semibold text-text-primary ">Quienes Somos</h2>
+              <p className="text-text-secondary">
+                Descubre nuestra exquisita selección de pasteles, perfectos para cualquier celebración o para darte un gusto personal. 
+                Desde clásicos pasteles de chocolate y vainilla hasta creaciones innovadoras como tarta de limón con merengue y pastel de red velvet, cada uno de nuestros productos está hecho con ingredientes de alta calidad y una atención meticulosa a los detalles. Ya sea que estés buscando el pastel perfecto para un cumpleaños, una boda o simplemente una merienda especial, nuestro surtido promete endulzar tu día con sabores irresistibles y presentaciones elegantes. ¡Haz tu pedido hoy y déjate llevar por el sabor!
+                </p>
             </div>
         </div>
 
-        <div className="w-full flex items-center bg-white  my-4 bg-background  rounded-lg shadow hover:shadow-lg hover:shadow-primary group duration-700 hover:scale-105 ">
+        <div className="w-full flex items-center bg-white  my-4 bg-background  rounded-lg shadow 
+        hover:shadow-lg group duration-700 ">
 
           <div className="flex-1 pl-6 px-10">
             <h2 className="text-3xl mb-4 font-semibold text-text-primary">Un Viaje de Sabores en Cada Taza</h2>
@@ -46,6 +50,6 @@ export default function About()
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
