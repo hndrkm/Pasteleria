@@ -4,15 +4,16 @@ import Services from "@/ui/Services";
 
 export default function Home() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <section className="h-screen bg-background">
         <div className="w-full">
           <Image
-            src="/PasteleriaA1.jpg"
+            className="pt-28"
+            src="/Mama.jpg"
             alt="Imagen de fondo"
             fill={true}
             quality={100}
-            style={{ width: "100%", display: "block", maxHeight: "100vh", objectFit: "cover" }}
+            style={{ width: "100%", display: "block", maxHeight: "100vh", objectFit: "contain" }}
           />
         </div>
 
@@ -20,7 +21,7 @@ export default function Home() {
           <div className="">
             <h1 className="text-4xl font-bold mb-4 text-text-primary bg-black/20 backdrop-blur-sm rounded-md py-2">Los más deliciosos sabores frescos y naturales en tus pasteles favoritos.</h1>
             <p className="text-lg text-white text-justify font-bold max-w-xl bg-black/40 backdrop-blur-2xl rounded-md p-2">
-            Disfruta de nuestros deliciosos pasteles y postres, elaborados con ingredientes frescos y naturales, perfectos para cada día y para esos momentos especiales. Déjanos endulzar tu vida con nuestros exquisitos sabores.</p>
+              Disfruta de nuestros deliciosos pasteles y postres, elaborados con ingredientes frescos y naturales, perfectos para cada día y para esos momentos especiales. Déjanos endulzar tu vida con nuestros exquisitos sabores.</p>
           </div>
           <div className="items-center p-8">
             <button className="px-6 py-3 bg-button hover:bg-popover text-white hover:text-selected rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
@@ -33,14 +34,15 @@ export default function Home() {
       <section className="flex flex-col items-center py-10 bg-background">
         <div className="w-full text-5xl text-center font-bold tracking-tight text-text-primary p-8">PROMOCIONES</div>
         <div className="container grid grid-cols-2 gap-10 place-items-center h-full max-w-fit" >
-          <Promotion />
-          <Promotion />
-          <Promotion />
-          <Promotion />
+          <Promotion id="pr1" title="Tortas para mamá" description="Este 27 de mayo, despiértala con el desayuno que ella se merece.
+Nosotros preparamos bandejas llenas de amor, sabor y pequeños detalles que la harán sonreír desde el primer bocado."
+            image="/Promo1.png" price={95} href="/products/cake_shop"/>
+          <Promotion id="pr1" title="Helado de copa melba" description="Disfruta el helado en esta oferta especial por el dia de la madre." image="/Promo2.png" price={12} href="/products/coffee_bar"/>
+
         </div>
       </section>
 
-      <Services/>
+      <Services />
 
       <section className="relative h-[300px] bg-gray-800">
         <div className="absolute inset-0">

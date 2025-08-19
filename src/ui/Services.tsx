@@ -4,22 +4,27 @@ const dataService =
         {
             'id': 1,
             'name': "Pasteleria Diaria",
-            'href': "/"
+            'href': "/products/confectionery",
+            'img': "/Icon1.png"
         },
         {
             'id': 2,
             'name': "Cafeteria",
-            'href': "/products"
+            'href': "/products/coffee_bar",
+            'img': "/Icon2.jpg"
         },
         {
             'id': 3,
             'name': "Tortas Clasicas",
-            'href': "/about"
+            'href': "/products/cake_shop",
+            'img': "/Icon3.jpg"
         },
         {
             'id': 4,
             'name': "Tortas para Eventos",
-            'href': "/contact"
+            'href': "/products/events",
+            'img': "/Icon4.jpg"
+
         }
     ]
 export default function Footer() {
@@ -28,7 +33,7 @@ export default function Footer() {
             <div className="w-full text-5xl text-center font-bold tracking-tight text-text-primary p-4">SERVICIOS</div>
             <div className="flex flex-row justify-center">
                 {dataService.map((service) =>
-                    <CardService key={service.id} name={service.name} img="/pasteleria2.png" />
+                    <CardService key={service.id} name={service.name} img={service.img}  />
                 )}
 
             </div>

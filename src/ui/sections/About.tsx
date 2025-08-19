@@ -22,8 +22,7 @@ export default function About()
             <div className="flex-1 pl-6 px-6">
               <h2 className="text-3xl mb-4 font-semibold text-text-primary ">Quienes Somos</h2>
               <p className="text-text-secondary">
-                Descubre nuestra exquisita selección de pasteles, perfectos para cualquier celebración o para darte un gusto personal. 
-                Desde clásicos pasteles de chocolate y vainilla hasta creaciones innovadoras como tarta de limón con merengue y pastel de red velvet, cada uno de nuestros productos está hecho con ingredientes de alta calidad y una atención meticulosa a los detalles. Ya sea que estés buscando el pastel perfecto para un cumpleaños, una boda o simplemente una merienda especial, nuestro surtido promete endulzar tu día con sabores irresistibles y presentaciones elegantes. ¡Haz tu pedido hoy y déjate llevar por el sabor!
+                Somos una pasteleria que cuenta con un equipo humano comprometido con satisfacer los requerimientos de nuestros clientes mediante la elaboracion de productos de calidaqd, innovando diseños de acuerdo a las preferencias de nuestros clientes.
                 </p>
             </div>
         </div>

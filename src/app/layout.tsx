@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import {Navbar} from "../ui/Navbar";
+import { Navbar } from "../ui/Navbar";
 import Footer from "@/ui/Footer";
 import { montserrat } from "@/ui/fonts";
 
@@ -16,10 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Pasteleria Alarcon</title>
+        <link rel="icon" href="/isologo.png" sizes="any"></link>
+      </head>
+
       <body className={`${montserrat.className} antialiased`}>
-        <Navbar locale=""/>
+        <Navbar locale="" />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

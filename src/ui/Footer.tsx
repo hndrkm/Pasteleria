@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col justify-center p-8">
           <h1 className="text-2xl font-bold mb-4 text-text-primary">Pastelería Alarcón </h1>
           <div className="text-text-secondary font-semibold px-10 max-w-md">
-            <p>Muy pronto con nuevos sabores y productos en postres, tortas de tendencia, panadería y mucho más.</p>
+            <p>Esfuerzo, Eficiencia, Calidad e innovacion seran nuestros pilares fundamentales para establecernos dentro de nuestro mercado</p>
           </div>
         </div>
         <div className="flex flex-col justify-center p-8">
@@ -29,6 +29,10 @@ export default function Footer() {
             <div className="flex text-text-secondary font-semibold px-10 pt-2">
               <SiGooglemaps className="w-5 mr-2" />
               <p className="text-left">16 de Julio: Estacion Mi Teleferico linea Roja lado boleteria.</p>
+            </div>
+            <div className="flex text-text-secondary font-semibold px-10 pt-2">
+              <SiGooglemaps className="w-5 mr-2" />
+              <p className="text-left">Satelite: Estacion Mi Teleferico linea Amarilla frente a EBA.</p>
             </div>
           </div>
         </div>

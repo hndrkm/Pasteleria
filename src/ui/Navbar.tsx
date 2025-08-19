@@ -1,6 +1,6 @@
 'use client'
 import { FC } from "react"
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaTiktok } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
@@ -30,11 +30,11 @@ const navigation =
   ]
 export const Navbar: FC<Props> = ({ locale }) => {
   return (
-    <header className="fixed z-30 w-full bg-white/70">
+    <header className="fixed z-30 w-full bg-white">
       <div className="mx-auto flex flex-row justify-center backdrop-blur-sm">
         <div className="flex items-center justify-end py-2 hover:translate-y-[5px] transition duration-300 ease-in-out">
           <Image
-            src="/Plogot2.png"
+            src="/logodark.svg"
             width={400}
             height={100}
             alt="Pasteleria Alarcon"
@@ -46,16 +46,26 @@ export const Navbar: FC<Props> = ({ locale }) => {
            mt-4 border-x border-primary ">
             {navigation.map((item) =>
               <li key={item.name}>
-                <NavItem  name={item.name} href={item.href}></NavItem>
+                <NavItem name={item.name} href={item.href}></NavItem>
               </li>)
             }
           </ul>
         </div>
 
         <div className="flex items-center justify-start  pt-8">
-          <FaFacebookSquare className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px] transition duration-300 ease-in-out" />
-          <RiWhatsappFill className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px]   transition duration-300 ease-in-out" />
-          <FaInstagram className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px] transition duration-300 ease-in-out" />
+          <a href="https://www.facebook.com/pasteleriaalarcon97">
+            <FaFacebookSquare className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px] transition duration-300 ease-in-out" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=59163190136&text=Hola">
+            <RiWhatsappFill className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px]   transition duration-300 ease-in-out" />
+          </a>
+          <a href="https://www.instagram.com/pasteleriaalarcon/">
+            <FaInstagram className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px] transition duration-300 ease-in-out" />
+          </a>
+          <a href="https://www.facebook.com/pasteleriaalarcon97">
+            <FaTiktok className="text-button hover:text-accent w-7 h-7 m-2 hover:translate-y-[-5px] transition duration-300 ease-in-out" />
+          </a>
+
         </div>
       </div>
     </header>
