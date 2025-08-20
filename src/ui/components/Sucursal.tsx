@@ -4,8 +4,8 @@ export function Sucursal(
   props: { title: string, src_img: string, src_map: string, description_title: string, description_text: string }) {
   return (
 
-    <div className="flex flex-col py-10">
-      <div className="shadow-lg hover:shadow-lg hover:shadow-primary group duration-700 hover:scale-105  ">
+    <div className="flex flex-col py-1">
+      <div className="group duration-700 hover:scale-105  ">
 
         <h2 className="text-2xl font-bold tracking-tight text-text-primary py-10">{props.title}</h2>
 
@@ -40,10 +40,9 @@ export function Sucursal(
           </div>
         </div>
 
-        <div className="p-10 flex items-center justify-center ">
+        <div className="p-2 flex items-center justify-center ">
           <div className="text-left">
-            <h2 className="text-3xl mb-4 font-semibold text-text-primary py-8">{props.description_title}</h2>
-            <p className="text-gray-700 pb-8">{props.description_text}</p>
+            <p className="text-gray-800 pb-8">{props.description_text}</p>
           </div>
         </div>
 

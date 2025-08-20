@@ -7,7 +7,9 @@ export default function AboutPage() {
       <div className="bg-gradient-to-b from-orange-600 to-transparent h-32 mb-8"></div>
       <div className="flex flex-col divide-y-2 divide-dashed divide-primary">
         <About />
+        {/*
         <OurServices />
+        */}
       </div>
     </div>
   );

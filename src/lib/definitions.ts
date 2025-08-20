@@ -14,6 +14,7 @@ export type Cake = {
     id: string;
     title: string;
     description: string;
+    img: string;
     price_1: number;
     price_2: number;
     price_3: number;

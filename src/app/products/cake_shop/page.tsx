@@ -31,6 +31,7 @@ export default function CakeShopPage() {
                                     id={item.id}
                                     title={item.title}
                                     description={item.description}
+                                    img={item.img}
                                     price_1={item.price_1}
                                     price_2={item.price_2}
                                     price_3={item.price_3}

@@ -7,11 +7,11 @@ export function CakeCard(props: Cake) {
     return (
 
         <div className="flex rounded-xl max-w-4xl overflow-hidden border border-primary ">
-            <div className="w-1/3 p-4 flex justify-center items-center bg-background">
+            <div className="w-1/3 p-4 flex justify-center items-center bg-white">
                 <div className="min-w-60 min-h-60 rounded-xl overflow-hidden relative aspect-video ">
                     <Image
                         fill
-                        src="/PasteleriaA1.jpg"
+                        src={props.img}
                         placeholder="blur"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII="
                         alt="image"
@@ -33,9 +33,6 @@ export function CakeCard(props: Cake) {
                         </li>
                         <li>
                             30 Porciones Bs. {props.price_3}.00
-                        </li>
-                        <li>
-                            50 Porciones Bs. {props.price_4}.00
                         </li>
                     </ul>
                 </div>
