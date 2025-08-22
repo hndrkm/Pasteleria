@@ -1,9 +1,11 @@
+"use client";
 import { Cake } from "@/lib/definitions";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useOrderModal } from "@/ui/components/OrderModalContext";
 
 export function CakeCard(props: Cake) {
+    const { openModal } = useOrderModal();
     return (
 
         <div className="flex rounded-xl max-w-4xl overflow-hidden border border-primary ">
@@ -20,9 +22,9 @@ export function CakeCard(props: Cake) {
             </div>
             <div className="w-2/3 p-4 flex flex-col items-center justify-center text-text-secondary text-left ">
                 <h3 className="text-xl font-bold tracking-tighter mt-3 mb-1">
-                    { props.title}
+                    {props.title}
                 </h3>
-                <p className=" leading-5">{props.description } </p>
+                <p className=" leading-5">{props.description} </p>
                 <div>
                     <ul className="p-2 m-2 list-disc">
                         <li>
@@ -38,8 +40,10 @@ export function CakeCard(props: Cake) {
                 </div>
                 <div className="px-2">
                     <button className="w-full bg-button rounded-lg no-underline text-white hover:bg-button-hover p-2"
+                        onClick={() => openModal(props.title)}
                     >
-                        <Link href="/docs/cards-with-image-bg">Hacer Pedido</Link>
+                       Hacer Pedido
+
                     </button>
                 </div>
             </div>

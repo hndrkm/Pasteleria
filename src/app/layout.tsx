@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import { Navbar } from "../ui/Navbar";
 import Footer from "@/ui/Footer";
 import { montserrat } from "@/ui/fonts";
+import { OrderModalProvider } from "@/ui/components/OrderModalContext";
+import OrderModal from "@/ui/components/OrderModal";
 
 export const metadata: Metadata = {
   title: "Pasteleria",
@@ -22,8 +24,15 @@ export default function RootLayout({
       </head>
 
       <body className={`${montserrat.className} antialiased`}>
-        <Navbar locale="" />
-        {children}
+        <OrderModalProvider>
+          <Navbar locale="" />
+          <main>
+            {children}
+          </main>
+          <OrderModal/>
+        </OrderModalProvider>
+
+
         <Footer />
       </body>
     </html>

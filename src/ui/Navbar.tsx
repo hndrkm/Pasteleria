@@ -5,6 +5,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import { NavItem } from "./components/NavItem";
+import { useState } from "react";
+import OrderModal from "./components/OrderModal";
 
 interface Props {
   locale: string
@@ -29,6 +31,7 @@ const navigation =
     }
   ]
 export const Navbar: FC<Props> = ({ locale }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
   return (
     <header className="fixed z-30 w-full bg-white">
       <div className="mx-auto flex flex-row justify-center backdrop-blur-sm">

@@ -1,5 +1,6 @@
 import { ProductCard } from "@/ui/components/ProductCard";
 import { products } from "@/lib/api";
+import Image from "next/image";
 import Link from "next/link";
 export default function ProductPage() {
     return (
@@ -10,7 +11,15 @@ export default function ProductPage() {
                 <div className="flex flex-col items-center divide-y-2 divide-dashed divide-primary">
                     <div className="container flex flex-row p-4">
                         <div className="flex justify-center w-1/3 bg-muted-foreground  m-2 rounded-lg border-2 border-button-hover">
-                            <span className="m-auto text-black">Imagen</span>
+                            <div className="min-w-60 min-h-60 rounded-xl overflow-hidden relative aspect-video ">
+                                <Image
+                                objectFit="cover"
+                                    className="max-h-full max-w-full m-auto"
+                                    src="/reposteria.png"
+                                    fill
+                                    alt="Picture of the author"
+                                />
+                            </div>
                         </div>
                         <div className="w-2/3 py-4 flex flex-col">
                             <h1 className="text-center text-text-primary text-4xl font-bold w-full">Pasteleria</h1>
@@ -28,7 +37,15 @@ export default function ProductPage() {
                     </div>
                     <div className="container flex flex-row p-4">
                         <div className="flex justify-center w-1/3 bg-muted-foreground m-2 rounded-lg border-2 border-button-hover">
-                            <span className="m-auto text-black">Imagen</span>
+                            <div className="min-w-60 min-h-60 rounded-xl overflow-hidden relative aspect-video ">
+                                <Image
+                                objectFit="cover"
+                                    className="max-h-full max-w-full m-auto"
+                                    src="/Cafeteria.png"
+                                    fill
+                                    alt="Picture of the author"
+                                />
+                            </div>
                         </div>
                         <div className="w-2/3 py-4 flex flex-col">
                             <h1 className="text-center text-text-primary text-4xl font-bold w-full">Cafeteria</h1>
@@ -44,8 +61,18 @@ export default function ProductPage() {
                         </div>
                     </div>
                     <div className="container flex flex-row p-4">
-                        <div className="flex justify-center w-1/3 bg-muted-foreground  m-2 rounded-lg border-2 border-button-hover">
-                            <span className="m-auto text-black">Imagen</span>
+
+                        <div className="flex justify-center w-1/3  m-2 rounded-lg border-2 border-button-hover">
+                            <div className="min-w-60 min-h-60 rounded-xl overflow-hidden relative aspect-video ">
+                                <Image
+                                objectFit="cover"
+                                    className="max-h-full max-w-full m-auto"
+                                    src="/tortas.png"
+                                    fill
+                                    alt="Picture of the author"
+                                />
+                            </div>
+
                         </div>
                         <div className="w-2/3 py-4 flex flex-col">
                             <h1 className="text-center text-text-primary text-4xl font-bold w-full">Tortas</h1>
@@ -64,6 +91,7 @@ export default function ProductPage() {
                             </Link>
                         </div>
                     </div>
+                    {/*
                     <div className="container flex flex-row p-4">
                         <div className="flex justify-center w-1/3 bg-muted-foreground  m-2 rounded-lg border-2 border-button-hover">
                             <span className="m-auto text-black">Imagen</span>
@@ -84,7 +112,7 @@ export default function ProductPage() {
                             </Link>
                         </div>
                     </div>
-
+                    */}
 
                 </div>
 
